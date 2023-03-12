@@ -1,0 +1,91 @@
+
+
+QCheckBox::indicator:checked
+{
+image: url(:/Images/ChkChecked.png)
+}
+
+QCheckBox::indicator:unchecked
+{
+image: url(:/Images/ChkNotChecked.png);
+}
+
+QCheckBox
+{
+font-weight:bold;
+}
+
+#MainDialog
+{
+background-color: rgb(1,27,72);
+}
+
+#LeftWidget
+{
+background-color: cyan;
+}
+
+#RightWidget
+{
+background-color: cyan;
+}
+
+
+QSplitter::handle:horizontal
+{
+
+image: url(:/Images/splitter_handle.png);
+
+}
+
+QProgressBar
+{
+border-color: #9f95a3;  /* [LIGHT] - duplicated from QPushButton */
+border-width: 1px;
+border-style: solid;
+
+background-color: #fbfbfb;
+
+height: 26px;
+border-radius: 13px;
+
+text-align: right;
+/* NOT SUPPORTED: painting a gradient on the outline, up until the current progress value */
+}
+
+QProgressBar::chunk
+{
+border-color: qlineargradient(x1:0, y1:1, x2:1, y2:0, stop:0 #11c2e1, stop:1 #893a94);
+border-width: 1px;
+border-style: solid;
+background-color: qlineargradient(x1:0, y1:1, x2:1, y2:0, stop:0 #6011c2e1, stop:1 #60893a94);
+border-radius: 11px;
+margin: 2px;
+}
+
+QProgressBar {
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+QLineEdit {
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 0 8px;
+    background: blue;
+    color:white;
+    width: 45px;
+}
+QLabel
+{
+color: solid blue;
+}
+
+QSpinBox {
+    padding-right: 6px;
+    background-color: lightblue;
+    border-width: 3;
+    width: 30px;
+    height:30px;
+}
+

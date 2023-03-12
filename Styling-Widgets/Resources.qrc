@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/Style"/>
+    <qresource prefix="/">
+        <file>Images/ChkChecked.png</file>
+        <file>Images/ChkNotChecked.png</file>
+        <file>Images/CmdCancel.png</file>
+        <file>StylesheetFile/stylesheet.qss</file>
+        <file>Images/splitter_handle.png</file>
+    </qresource>
+</RCC>
