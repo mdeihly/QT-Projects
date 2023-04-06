@@ -13,6 +13,7 @@ MainDialog::MainDialog(QWidget *parent)
         ui->timeEdit->setTime(currentTime);
     });
 
+    setWindowTitle("Analog Clock");
     resize(400,400);
 }
 
