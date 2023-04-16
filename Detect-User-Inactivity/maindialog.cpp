@@ -57,7 +57,7 @@ void MainDialog::onTimeout()
     if(std::isless(currentSec,10) && std::isgreater(currentSec,0))
     {
         // last 10 seconds --> Red blinking Led
-        ui->ledLabel->onActivateLed(Qt::red);
+        ui->ledLabel->activateLed(Qt::red);
 
     }
     else if(0 == currentSec)
@@ -75,7 +75,7 @@ void MainDialog::onTimeout()
     else
     {
         // normal blinking LED
-        ui->ledLabel->onActivateLed(Qt::green);
+        ui->ledLabel->activateLed(Qt::green);
     }
 
 

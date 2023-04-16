@@ -20,7 +20,7 @@ void Led::onTimeout()
                                           "");
 }
 
-void Led::onActivateLed(const QColor &color)
+void Led::activateLed(const QColor &color)
 {
     m_timer->start(200);
 

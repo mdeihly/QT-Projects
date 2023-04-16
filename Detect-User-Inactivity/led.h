@@ -13,7 +13,7 @@ class Led : public QLabel
 public:
     Led(QWidget *parent = nullptr);
 
-    void onActivateLed(const QColor &color);
+    void activateLed(const QColor &color);
 
 private slots:
     void onTimeout();
