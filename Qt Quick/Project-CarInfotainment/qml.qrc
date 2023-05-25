@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ui/BottomBar/BottomBar.qml</file>
+        <file>ui/Images/map.png</file>
+        <file>ui/RightScreen/RightScreen.qml</file>
+        <file>ui/Images/lock.png</file>
+        <file>ui/Images/unlock.png</file>
+        <file>ui/LeftScreen/LeftScreen.qml</file>
+        <file>ui/Images/car.png</file>
+        <file>ui/Images/searchIcon.png</file>
+        <file>ui/LeftScreen/SearchBox.qml</file>
+        <file>ui/BottomBar/AirConditionComponent.qml</file>
+    </qresource>
+</RCC>

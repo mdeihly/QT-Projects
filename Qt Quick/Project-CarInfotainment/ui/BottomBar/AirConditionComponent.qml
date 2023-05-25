@@ -1,0 +1,84 @@
+import QtQuick 2.15
+
+Item {
+
+    readonly property color fontColor: "silver"
+    readonly property color transparentBkg: "transparent"
+    readonly property int fontSize: 26
+    readonly property int margin: 10
+    readonly property int incrementTemperature: 1
+    readonly property int decrementTemperature: -1
+
+    Rectangle
+    {
+        id: decrementButton
+        anchors
+        {
+            left: parent.left
+            top: parent.top
+            bottom: parent.bottom
+        }
+        width: height / 2
+        color: transparentBkg
+
+        Text
+        {
+            text: "<"
+            anchors.centerIn: parent
+            color: fontColor
+            font.pixelSize: fontSize
+
+            MouseArea
+            {
+                anchors.fill: parent
+                cursorShape: Qt.PointingHandCursor
+                onClicked: _acHandler.updateTemperature(decrementTemperature)
+            }
+        }
+    }
+
+    Text
+    {
+        id: targetTempValue
+        text: qsTr("%1").arg(_acHandler.targetTemperature)
+        anchors
+        {
+            left: decrementButton.right
+            verticalCenter: parent.verticalCenter
+            leftMargin: margin
+        }
+
+        font.pixelSize: fontSize
+        color:fontColor
+    }
+
+    Rectangle
+    {
+        id: incrementButton
+        anchors
+        {
+            left: targetTempValue.right
+            top: parent.top
+            bottom: parent.bottom
+            leftMargin: margin
+        }
+        width: height / 2
+        color: transparentBkg
+
+        Text
+        {
+            text: ">"
+            anchors.centerIn: parent
+            color: fontColor
+            font.pixelSize: fontSize
+
+            MouseArea
+            {
+                anchors.fill: parent
+                cursorShape: Qt.PointingHandCursor
+                onClicked: _acHandler.updateTemperature(incrementTemperature)
+            }
+        }
+    }
+
+}
