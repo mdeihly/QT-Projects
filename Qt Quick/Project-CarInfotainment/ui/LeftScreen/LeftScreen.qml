@@ -3,18 +3,6 @@ import QtQuick 2.15
 Rectangle
 {
     id: leftScreen
-    anchors
-    {
-        left: parent.left
-        right: rightScreen.left
-        bottom: bottomBar.top
-        top: parent.top
-    }
-
-    gradient: Gradient {
-        GradientStop { position: 0.0; color: "lightblue" }
-        GradientStop { position: 1.0; color: "blue" }
-    }
 
     SearchBox
     {
@@ -25,6 +13,11 @@ Rectangle
             left: parent.left
             margins: 20
         }
+
+        width: parent.width * 2/3
+        height: parent.height * 1/13
+        color: "#888"
+
     }
 
     Image

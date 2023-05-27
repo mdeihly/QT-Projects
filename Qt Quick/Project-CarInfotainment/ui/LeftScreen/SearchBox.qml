@@ -3,10 +3,6 @@ import QtQuick 2.15
 Rectangle
 {
     id: searchBox
-    readonly property color __colorLightGrey: "#888"
-    width: parent.width * 2/3
-    height: parent.height * 1/13
-    color:__colorLightGrey
 
     Image {
         id: searchIcon
