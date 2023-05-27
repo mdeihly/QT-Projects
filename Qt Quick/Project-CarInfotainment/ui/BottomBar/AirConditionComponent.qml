@@ -1,6 +1,7 @@
 import QtQuick 2.15
 
 Item {
+    id: root
 
     readonly property color fontColor: "silver"
     readonly property color transparentBkg: "transparent"
@@ -19,20 +20,20 @@ Item {
             bottom: parent.bottom
         }
         width: height / 2
-        color: transparentBkg
+        color: root.transparentBkg
 
         Text
         {
             text: "<"
             anchors.centerIn: parent
-            color: fontColor
-            font.pixelSize: fontSize
+            color: root.fontColor
+            font.pixelSize: root.fontSize
 
             MouseArea
             {
                 anchors.fill: parent
                 cursorShape: Qt.PointingHandCursor
-                onClicked: _acHandler.updateTemperature(decrementTemperature)
+                onClicked: _acHandler.updateTemperature(root.decrementTemperature)
             }
         }
     }
@@ -45,11 +46,11 @@ Item {
         {
             left: decrementButton.right
             verticalCenter: parent.verticalCenter
-            leftMargin: margin
+            leftMargin: root.margin
         }
 
-        font.pixelSize: fontSize
-        color:fontColor
+        font.pixelSize: root.fontSize
+        color:root.fontColor
     }
 
     Rectangle
@@ -60,23 +61,23 @@ Item {
             left: targetTempValue.right
             top: parent.top
             bottom: parent.bottom
-            leftMargin: margin
+            leftMargin: root.margin
         }
         width: height / 2
-        color: transparentBkg
+        color: root.transparentBkg
 
         Text
         {
             text: ">"
             anchors.centerIn: parent
-            color: fontColor
-            font.pixelSize: fontSize
+            color: root.fontColor
+            font.pixelSize: root.fontSize
 
             MouseArea
             {
                 anchors.fill: parent
                 cursorShape: Qt.PointingHandCursor
-                onClicked: _acHandler.updateTemperature(incrementTemperature)
+                onClicked: _acHandler.updateTemperature(root.incrementTemperature)
             }
         }
     }
