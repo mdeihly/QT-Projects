@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/BottomBar.qml</file>
+        <file>qml/views/InitialView.qml</file>
+        <file>qml/views/MainView.qml</file>
+    </qresource>
+</RCC>
