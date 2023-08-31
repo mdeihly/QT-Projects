@@ -1,2 +1,2 @@
-![](Video/Fliackable_Video.gif)
+![](Video/Flickable_Video.gif)
 
