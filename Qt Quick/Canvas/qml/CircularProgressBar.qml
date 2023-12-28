@@ -49,7 +49,7 @@ Item {
             ctx.beginPath();
             ctx.arc(x, y, radius, startAngle, progressAngle);
             // setup the stroke
-            ctx.strokeStyle = 'blue'; // root.primaryColor
+            ctx.strokeStyle = 'blue';
             // stroke using line width and stroke style
             ctx.stroke();
         }
