@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/controls/CsmTextField.qml</file>
+        <file>qml/controls/CsmButton.qml</file>
+        <file>qml/controls/CsmComboBox.qml</file>
+        <file>qml/components/FrontCard.qml</file>
+        <file>qml/components/BackCard.qml</file>
+        <file>qml/components/ItemTumbler.qml</file>
+        <file>images/19.jpeg</file>
+        <file>images/chip.png</file>
+        <file>images/visa.png</file>
+        <file>images/16.jpeg</file>
+        <file>images/3.jpeg</file>
+        <file>images/1.jpeg</file>
+        <file>images/2.jpeg</file>
+        <file>images/4.jpeg</file>
+        <file>images/5.jpeg</file>
+        <file>images/6.jpeg</file>
+        <file>images/7.jpeg</file>
+        <file>images/8.jpeg</file>
+        <file>images/9.jpeg</file>
+        <file>images/10.jpeg</file>
+        <file>images/11.jpeg</file>
+        <file>images/12.jpeg</file>
+        <file>images/13.jpeg</file>
+        <file>images/14.jpeg</file>
+        <file>images/15.jpeg</file>
+        <file>images/17.jpeg</file>
+        <file>images/18.jpeg</file>
+        <file>images/20.jpeg</file>
+        <file>images/21.jpeg</file>
+        <file>images/22.jpeg</file>
+        <file>images/23.jpeg</file>
+        <file>images/24.jpeg</file>
+        <file>images/25.jpeg</file>
+        <file>images/arrow-down.svg</file>
+        <file>images/discover.png</file>
+        <file>images/mastercard.png</file>
+        <file>images/troy.png</file>
+    </qresource>
+</RCC>
