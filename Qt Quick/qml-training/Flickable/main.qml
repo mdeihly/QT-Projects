@@ -1,30 +1,63 @@
 import QtQuick 2.15
+import QtQuick.Controls 2.15
 import QtQuick.Window 2.15
-import QtQuick.Controls 2.0
 
-Window {
-    id: window
-    width: 640
-    height: 480
+ApplicationWindow {
     visible: true
-    title: qsTr("Flickable")
+    width: 300
+    height: 400
+    title: "Flickable Example"
 
     Flickable {
         id: flickable
-        width: 400; height: 400
-        contentWidth: 2000; contentHeight: 2000
+        width: parent.width
+        height: parent.height
+        contentWidth: parent.width
+        contentHeight: contentColumn.height  // Allow scrolling if content exceeds visible area
 
         onFlickStarted: {
-            rec.color = "cyan"
+            console.log("Flick started")
         }
         onFlickEnded: {
-            rec.color = "red"
+            console.log("Flick ended")
+        }
+
+        rebound: Transition {
+            NumberAnimation {
+                properties: "x,y"
+                duration: 500
+                easing.type: Easing.OutBounce
+            }
         }
 
         Rectangle {
-            id: rec
-            width: 100; height: 50
-            color: "blue"
+            width: flickable.width
+            height: flickable.contentHeight
+            color: "green"
+        }
+
+        Column {
+            id: contentColumn
+            width: flickable.width
+            spacing: 10
+            padding: 10
+
+            // Adding multiple items to demonstrate scrolling
+            Repeater {
+                model: 20  // Creates 20 items for demonstration
+                Text {
+                    text: "Item " + (index + 1)
+                    font.pixelSize: 18
+                    color: "black"
+                    width: parent.width
+                    horizontalAlignment: Text.AlignHCenter
+                    padding: 10
+                    // background: Rectangle {
+                    //     color: index % 2 === 0 ? "#e0e0e0" : "#c0c0c0"
+                    //     radius: 5
+                    // }
+                }
+            }
         }
     }
 }
