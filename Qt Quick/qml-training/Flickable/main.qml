@@ -51,11 +51,6 @@ ApplicationWindow {
                     color: "black"
                     width: parent.width
                     horizontalAlignment: Text.AlignHCenter
-                    padding: 10
-                    // background: Rectangle {
-                    //     color: index % 2 === 0 ? "#e0e0e0" : "#c0c0c0"
-                    //     radius: 5
-                    // }
                 }
             }
         }
