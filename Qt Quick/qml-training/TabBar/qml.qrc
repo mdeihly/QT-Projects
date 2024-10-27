@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Controls/CsmTabButton.qml</file>
+        <file>Components/CsmFooter.qml</file>
+        <file>icons/cctv.svg</file>
+        <file>icons/communications.svg</file>
+        <file>icons/dashboard.svg</file>
+        <file>icons/fan.svg</file>
+        <file>icons/lamp.svg</file>
+        <file>icons/refrigerator.svg</file>
+        <file>icons/security.svg</file>
+        <file>icons/settings.svg</file>
+    </qresource>
+</RCC>
