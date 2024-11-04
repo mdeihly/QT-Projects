@@ -29,8 +29,9 @@ Window {
         clip: true
         cellWidth: root.width / 3
         cellHeight: root.height / 3
-        delegate: Rectangle
-        {
+        boundsBehavior: GridView.StopAtBounds
+        snapMode: GridView.SnapOneRow
+        delegate: Rectangle {
             width: gridView.cellWidth * 0.9
             height: gridView.cellHeight * 0.9
             radius: 5
