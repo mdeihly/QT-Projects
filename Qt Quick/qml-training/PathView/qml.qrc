@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>assets/AddressBook.png</file>
+        <file>assets/AudioPlayer.png</file>
+        <file>assets/Camera.png</file>
+        <file>assets/EMail.png</file>
+        <file>assets/TodoList.png</file>
+    </qresource>
+</RCC>
