@@ -16,15 +16,17 @@ Rectangle
             id: popBtn
             text: "Pop"
             enabled: stack.depth > 1
-            onClicked: stack.pop()
             implicitWidth: __btnImplicitWidth
-
+            onClicked:
+                if(!stack.busy) {
+                    stack.pop()
+                }
         }
         Button {
             id: pushBtn
             text: "Push"
-            onClicked: stack.push("qrc:/qml/views/MainView.qml")
             implicitWidth: __btnImplicitWidth
+            onClicked: stack.push("qrc:/qml/views/MainView.qml")
         }
         Text {
             text: stack.depth
