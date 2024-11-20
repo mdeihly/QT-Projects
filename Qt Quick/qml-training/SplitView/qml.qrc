@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CsmSplitView.qml</file>
+        <file>icons/splitter_handle.png</file>
+    </qresource>
+</RCC>
