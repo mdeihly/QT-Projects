@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>controls/CsmMenu.qml</file>
+        <file>controls/CsmMenuItem.qml</file>
+        <file>icons/caret-right.svg</file>
+    </qresource>
+</RCC>
