@@ -22,6 +22,9 @@ Window {
         height: parent.height * 0.3
         edge: Qt.BottomEdge
 
+        enter: Transition {SmoothedAnimation { velocity: 5 }}
+        exit:  Transition {SmoothedAnimation { velocity: 5 }}
+
         // Background styling for the drawer
         background: Rectangle {
             color: "lightgrey"
